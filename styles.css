@@ -1,0 +1,142 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\itban\Downloads\web portfolio\images\spiders-5978177_1920.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff77;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the text */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(10, 14, 13, 0.9); /* Semi-transparent header background */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.title {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b; /* Stylish yellow */
+    transform: scale(1.1); /* Scales the link to 1.1 */
+    text-shadow: 0 0 10px rgba(255, 235, 59, 0.8), 0 0 20px rgba(255, 235, 59, 0.8); /* Glowing effect */
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    background-color: rgba(0, 3, 3, 0.897); /* Semi-transparent white background for each section */
+    margin: 80px auto; /* More space at the top for header */
+    padding: 99px;
+    width: 80%;
+    max-width: 2000px; /* Restrict the section width to ensure it’s not too wide */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 99px; /* Space between sections */
+}
+
+h2 {
+    color: #e76f51;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #ffffff;
+    border-left: 3px solid #e9c46a;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+ul, ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #264653;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    section {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p, li {
+        font-size: 1em;
+    }
+}
